@@ -11,13 +11,15 @@ Vai na Web module one final challenge, Star Wars Landing Page.
 - See the project template by [clicking here](https://xd.adobe.com/view/aaf75fc2-eba3-41ec-bc48-de80d0615154-ffa4/).
 
 ![Project Image](https://i.postimg.cc/jjLRRTBw/Captura-de-tela-2022-05-22-020537.png)
+<br>
 
-### 📍 Checkpoints
+## 📍 Checkpoints
 
 - ✅ Header
 - 🟩 Main
 - 🟩 Footer
 - 🟩 Responsive layout
+<br>
 
 <!-- |  Project | Developed |
 |----------|-----------------|
