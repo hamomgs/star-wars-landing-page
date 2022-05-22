@@ -41,10 +41,9 @@ Vai na Web module one final challenge, Star Wars Landing Page.
 
 ## 💚 Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Google Fonts](https://fonts.google.com)
 * [FFonts](www.ffonts.net/)
+* [Font Awesome](https://fontawesome.com)
 * [Post Image](https://postimages.org)
 * [Canva](https://canva.com)
 * [GitHub Pages](https://pages.github.com)
