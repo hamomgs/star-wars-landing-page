@@ -6,9 +6,9 @@
 }
 
 :root {
-  --primary-red: #D74430;
-  --secondary-red: #FF5A56;
-  --grey-clr: #2D2D2D;
+  --primary-red: #d74430;
+  --secondary-red: #ff5a56;
+  --grey-clr: #2d2d2d;
 }
 
 * {
@@ -34,7 +34,8 @@ header {
   position: relative;
 }
 
-header .starWarsTitle, .kylo {
+header .starWarsTitle,
+.kylo {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -97,7 +98,7 @@ header .slideControl .slideNumb01 {
 
 header .slideControl button {
   border: none;
-  background-color: #A9BDC1;
+  background-color: #a9bdc1;
   width: 1.2vw;
   height: 1.2vw;
   margin: 10.4% 0 0 5%;
@@ -122,7 +123,7 @@ main .aboutTheGame {
   height: 30.4vw;
   position: relative;
   left: 14.7%;
-  color: #FFF;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,10 +155,10 @@ main .aboutTheGame {
   width: 10.4vw;
   height: 2.6vw;
   padding: 1.8% 9.5%;
-  border: solid 2px #FFF;
+  border: solid 2px #fff;
   border-radius: 5px;
   background-color: transparent;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   font-size: 1.04vw;
   cursor: pointer;
@@ -165,7 +166,7 @@ main .aboutTheGame {
 }
 
 .aboutTheGame .startToPlay a:hover {
-  color: #D74430;
-  background-color: #FFF;
+  color: #d74430;
+  background-color: #fff;
   font-weight: 600;
 }
