@@ -22,7 +22,7 @@
 body {
   max-width: 1920px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 header {
@@ -51,24 +51,24 @@ header .starWarsTitle .starTitle {
 }
 
 header .starWarsTitle .warsTitle {
-  right: 11%;
+  right: 10.3%;
 }
 
 header .kylo img {
   width: 70vw;
   position: absolute;
   top: 5px;
-  left: 10.3vw;
+  left: 10vw;
 }
 
 header .slideControlContainer {
   width: 10%;
   position: absolute;
-  right: 11.7%;
+  right: 11%;
   bottom: 1.2vw;
   display: flex;
   flex-direction: column;
-  font-size: 1.7vw;
+  font-size: 1.6vw;
 }
 
 header .slideControlContainer .legion {
@@ -103,4 +103,69 @@ header .slideControl button {
   margin: 10.4% 0 0 5%;
   font-size: 0.9vw;
   cursor: pointer;
+}
+
+main .aboutTheGame {
+  background-image: url('../image/robot-bg.png');
+  background-size: 42.4vw 100%;
+  background-position: left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 76.6vw;
+  margin-top: -2.86vw;
+}
+
+.aboutTheGame .startToPlay {
+  background-image: url('../image/strom-trupe-red.png');
+  background-size: 100%;
+  width: 20.7vw;
+  height: 30.4vw;
+  position: relative;
+  left: 14.7%;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutTheGame .startToPlay h3 {
+  font-weight: 600;
+  font-size: 2.6vw;
+  width: 55%;
+  margin-bottom: 3.8vw;
+  padding-top: 4.16vw;
+}
+
+.aboutTheGame .startToPlay p:nth-child(2) {
+  font-weight: 300;
+  font-size: 1.04vw;
+  width: 17.34vw;
+  height: 4.21vw;
+  margin-bottom: 3.6vw;
+}
+
+.aboutTheGame .startToPlay p:nth-child(4) {
+  font-weight: 300;
+  font-size: 0.6vw;
+  margin: 1.4vw 0 0 62%;
+}
+
+.aboutTheGame .startToPlay a {
+  width: 10.4vw;
+  height: 2.6vw;
+  padding: 1.8% 9.5%;
+  border: solid 2px #FFF;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.04vw;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+.aboutTheGame .startToPlay a:hover {
+  color: #D74430;
+  background-color: #FFF;
+  font-weight: 600;
 }
