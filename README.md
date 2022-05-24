@@ -42,7 +42,7 @@ Vai na Web module one final challenge, Star Wars Landing Page.
 ## 💚 Acknowledgments
 
 * [W3Schools HTML Reference](https://www.w3schools.com/tags/)
-* [W3Schools CSSS Reference](https://www.w3schools.com/cssref/)
+* [W3Schools CSS Reference](https://www.w3schools.com/cssref/)
 * [Google Fonts](https://fonts.google.com)
 * [FFonts](www.ffonts.net/)
 * [Font Awesome](https://fontawesome.com)
