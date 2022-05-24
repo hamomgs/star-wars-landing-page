@@ -322,6 +322,10 @@ main .gameInfo {
   width: 85.4vw;
 }
 
+.attributes .hierarchy img {
+  width: 85.4vw;
+}
+
 .attributes .hierarchy figcaption {
   color: #fff;
   text-align: end;
