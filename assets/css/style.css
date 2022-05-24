@@ -13,6 +13,16 @@
   list-style: none;
 }
 
+::-webkit-scrollbar-track {
+	background-color: #2D2D2D;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d74430;
+}
+
 header {
   background-image: url('../image/star-wars-bg.png');
   background-size: 100%;
@@ -104,7 +114,7 @@ main .gameInfo {
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
-  height: 76.6vw;
+  height: 77vw;
   margin-top: -1vw;
   display: flex;
 }
@@ -268,5 +278,57 @@ main .gameInfo {
   width: 20.72vw;
   position: absolute;
   right: 6.5%;
-  bottom: -3vw;
+  bottom: -3.9vw;
+}
+
+.gameInfo .gameAttributes {
+  background-color: #2D2D2D;
+  width: 100%;
+  height: 2345px;
+  position: absolute;
+  top: 98.5%;
+}
+
+.gameAttributes h3 {
+  color: #fff;
+  font-family: 'Trueno';
+  font-size: 2.6vw;
+  margin: 10% 0 5% 13.5%;
+}
+
+.gameAttributes .attributes {
+  display: flex;
+  width: 86vw;
+  margin: 0 auto;
+}
+
+.attributes .containerImgAttributes {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45vw;
+}
+
+.attributes .gamePreview img {
+  width: 42.9vw;
+}
+
+.attributes .containerImgAttributes img {
+  width: 21.35vw;
+}
+
+.attributes .hierarchy {
+  position: absolute;
+  top: 48vw;
+  width: 85.4vw;
+}
+
+.attributes .hierarchy figcaption {
+  color: #fff;
+  text-align: end;
+  font-size: 1.04vw;
+  font-weight: 300;
+  width: 44.1vw;
+  margin-top: 1.5%;
+  position: absolute;
+  right: 0;
 }
