@@ -13,6 +13,10 @@
   list-style: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar-track {
 	background-color: #2D2D2D;
 }
@@ -76,7 +80,7 @@ header .slideControlContainer .legion {
   font-weight: 700;
 }
 
-header .slideControlContainer .division {
+header .slideControlContainer .divider {
   width: 100%;
   height: 3px;
   margin: 10% 0;
@@ -102,7 +106,7 @@ header .slideControl button {
   background-color: #a9bdc1;
   width: 1.2vw;
   height: 1.2vw;
-  margin: 10.4% 0 0 5%;
+  margin: 8% 0 0 5%;
   font-size: 0.9vw;
   cursor: pointer;
 }
@@ -122,7 +126,8 @@ main .gameInfo {
 .gameInfo .startToPlay {
   background-image: url('../image/strom-trupe-red.png');
   background-size: 100%;
-  width: 20.7vw;
+  background-repeat: no-repeat;
+  width: 25.7vw;
   height: 30.4vw;
   position: relative;
   top: -2.5%;
@@ -145,7 +150,7 @@ main .gameInfo {
 .gameInfo .startToPlay p:nth-child(2) {
   font-weight: 300;
   font-size: 1.04vw;
-  width: 17.34vw;
+  width: 17vw;
   height: 4.21vw;
   margin-bottom: 3.6vw;
 }
@@ -159,9 +164,11 @@ main .gameInfo {
 .gameInfo .startToPlay a {
   width: 10.4vw;
   height: 2.6vw;
-  padding: 1.8% 9.5%;
-  border: solid 2px #fff;
-  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 0.15vw #fff;
+  border-radius: 0.3vw;
   background-color: transparent;
   color: #fff;
   text-decoration: none;
@@ -212,7 +219,7 @@ main .gameInfo {
   width: 20.7vw;
 }
 
-.gameInfo .division {
+.gameInfo .divider {
   background-color: #707070;
   width: 78.3vw;
   height: 5px;
@@ -284,7 +291,7 @@ main .gameInfo {
 .gameInfo .gameAttributes {
   background-color: #2D2D2D;
   width: 100%;
-  height: 2345px;
+  height: 125vw;
   position: absolute;
   top: 98.5%;
 }
@@ -300,25 +307,126 @@ main .gameInfo {
   display: flex;
   width: 86vw;
   margin: 0 auto;
+  position: relative;
+}
+
+.attributes .attributeImg {
+  position: relative;
+}
+
+.attributeImg .hoverContainer {
+  display: none;
+}
+
+.attributeImg:nth-child(1) .hoverContainer::before,
+.attributeImg:nth-child(1) .hoverContainer::after {
+	content: "";
+	position: absolute;
+	width: 3vw;
+	height: 3vw;
+	border: solid 0.2vw;
+}
+
+.attributeImg:nth-child(1) .hoverContainer::before {
+	border-width: 0.3vw 0 0 0.3vw;
+  top: 4%;
+  left: 2%;
+}
+
+.attributeImg:nth-child(1) .hoverContainer::after {
+	border-width: 0 0.3vw 0.3vw 0;
+  right: 2.9%;
+  bottom: 3.5%;
+}
+
+.attributeImg:nth-child(1) .hoverContainer {
+  background-color: #D74430B3;
+  width: 22.4vw;
+  height: 14.06vw;
+  color: #fff;
+  position: absolute;
+  top: -4%;
+  left: -2%;
+  padding: 6%;
+}
+
+.attributeImg:nth-child(1) .hoverContainer h4 {
+  font-size: 1.30vw;
+  font-family: 'Trueno';
+  width: 32%;
+  position: absolute;
+  top: 12%;
+  left: 10%;
+}
+
+.attributeImg:nth-child(1) .hoverContainer p {
+  font-size: 0.8vw;
+  font-weight: 300;
+  width: 85%;
+  position: absolute;
+  top: 38%;
+  left: 10%;
+}
+
+.attributeImg:nth-child(1) .hoverContainer a {
+  text-decoration: none;
+  font-size: 1.04vw;
+  padding: 0.31vw 1.04vw;
+  border: solid 0.2vw;
+  color: #fff;
+  position: absolute;
+  top: 70%;
+  left: 6%;
+}
+
+.attributeImg:nth-child(1):hover .hoverContainer {
+  display: initial;
+}
+
+.attributes .attributePrincipalImg {
+  background-image: url('../image/game-preview.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 55vw;
+  height: 26.14vw;
+}
+
+.attributePrincipalImg .hoverContainer {
+  display: none;
 }
 
 .attributes .containerImgAttributes {
   display: flex;
   flex-wrap: wrap;
-  width: 45vw;
+  width: 55vw;
 }
 
-.attributes .gamePreview img {
-  width: 42.9vw;
-}
-
-.attributes .containerImgAttributes img {
+.containerImgAttributes .attributeImg {
   width: 21.35vw;
+  height: 13.1vw;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.attributeImg:nth-child(1) {
+  background-image: url('../image/security-storm-troper.png');
+}
+
+.attributeImg:nth-child(2) {
+  background-image: url('../image/robots-war.png');
+}
+
+.attributeImg:nth-child(3) {
+  background-image: url('../image/space-ships.png');
+}
+
+.attributeImg:nth-child(4) {
+  background-image: url('../image/storm-trup-elevator.png');
 }
 
 .attributes .hierarchy {
   position: absolute;
-  top: 48vw;
+  top: 30vw;
   width: 85.4vw;
 }
 
@@ -335,4 +443,162 @@ main .gameInfo {
   margin-top: 1.5%;
   position: absolute;
   right: 0;
+}
+
+.gameInfo .howPlay {
+  position: relative;
+  top: 231.5%;
+  width: 100%;
+  left: -17.4vw;
+}
+
+.howPlay .StormCapitain img {
+  width: 27.97vw;
+  position: absolute;
+  top: 1.4%;
+  left: 4%;
+}
+
+.howPlay h3 {
+  color: #fff;
+  font-family: 'Trueno';
+  font-size: 2.6vw;
+  position: absolute;
+  top: 14.5%;
+  left: 50.3%;
+}
+
+.howPlay .cardsContainer {
+  position: relative;
+  top: 36.5%;
+  left: 49.8%;
+  display: flex;
+  align-items: center;
+  gap: 39%;
+  width: 55vw;
+}
+
+.cardsContainer .card {
+  height: 14.6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card button {
+  background-image: linear-gradient(to right, #D74430 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  border: none;
+	width: 14.1vw;
+  padding: 0.9vw 0;
+	color: #FFF;
+  font-weight: 300;
+  font-size: 1.57vw;
+  position: absolute;
+  top: 30%;
+  cursor: pointer;
+  transition: 0.8s ease-in-out;
+}
+
+.card button:hover {
+	background-position: left;
+}
+
+.card h4 {
+  font-weight: 400;
+  font-size: 2.6vw;
+  position: absolute;
+  top: -4.5%;
+  transition: 0.5s ease-in-out;
+}
+
+.card button:hover ~ h4 {
+	font-weight: bold;
+}
+
+.card p {
+  width: 9vw;
+	text-align: center;
+  font-weight: 300;
+  font-size: 1.04vw;
+  position: absolute;
+  bottom: 10%;
+}
+
+.card:nth-child(2) p {
+  width: 7vw;
+}
+
+.card:nth-child(3) p {
+  width: 5.5vw;
+}
+
+.card .line {
+  width: 5.2vw;
+  height: 0.3vw;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.card button:hover ~ .line {
+	background-color: #D74430;
+}
+
+footer {
+  position: relative;
+  top: 155vw;
+}
+
+footer .downloadGame {
+  background-color: #ff5a56;
+  width: 63.96vw;
+  height: 45.94vw;
+  padding-left: 13.5%;
+}
+
+.downloadGame h3 {
+  color: #fff;
+  font-family: 'Trueno';
+  font-size: 2.6vw;
+  padding: 6.8vw 0 2vw 0;
+}
+
+.downloadGame p {
+  font-size: 1.04vw;
+  font-weight: 300;
+  color: #fff;
+  width: 28vw;
+  padding-bottom: 1.2vw;
+}
+
+.downloadGame .storeBtn a {
+  text-decoration: none;
+}
+
+.downloadGame .storeBtn img {
+  width: 14.4vw;
+  cursor: pointer;
+}
+
+.downloadGame .divider {
+  background-color: #D74430;
+  width: 29vw;
+  height: 0.4vw;
+  margin: 3.38vw 0;
+}
+
+.downloadGame .starWarsTitle img {
+  width: 13.4vw;
+  padding-bottom: 1.56vw;
+}
+
+.darthVader img {
+  width: 39.4vw;
+  position: absolute;
+  top: -14.2%;
+  left: 53.5%;
 }

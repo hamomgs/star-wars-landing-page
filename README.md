@@ -17,7 +17,7 @@ Vai na Web module one final challenge, Star Wars Landing Page.
 
 - ✅ Header
 - 🟩 Main
-- 🟩 Footer
+- ✅ Footer
 - 🟩 Responsive layout
 <br>
 
