@@ -278,15 +278,19 @@ main .gameInfo {
 }
 
 .structureList ul li {
+  background-image: linear-gradient(to left, #D74430 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: left;
   font-size: 1.56vw;
   text-align: end;
   padding-right: 2.5%;
+  border-radius: 3px;
   cursor: pointer;
-  transition: 0.3s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .structureList ul li:hover {
-  background-color: #d74430;
+  background-position: right;
   color: #fff;
 }
 
@@ -352,7 +356,7 @@ main .gameInfo {
 }
 
 .attributes .hoverContainer {
-  background-color: #009e05b3;
+  background-color: #30d738b3;
   width: 45vw;
   height: 28vw;
   color: #fff;
@@ -383,6 +387,9 @@ main .gameInfo {
 }
 
 .attributes .hoverContainer a {
+  background-image: linear-gradient(to bottom, #fff 50%, transparent 50%);
+  background-size: 200% 200%;
+  background-position: bottom;
   text-decoration: none;
   font-size: 1.5vw;
   padding: 1vw 3vw;
@@ -395,7 +402,7 @@ main .gameInfo {
 }
 
 .attributes .hoverContainer a:hover {
-  background-color: #fff;
+  background-position: top;
   color: #000;
 }
 
@@ -469,7 +476,7 @@ main .gameInfo {
 }
 
 .attributeImg:nth-child(4) .hoverContainer {
-  background-color: #25009eb3;
+  background-color: #3330d7b3;
 }
 
 .containerImgAttributes .hoverContainer h4 {
@@ -488,7 +495,6 @@ main .gameInfo {
   top: 70%;
   left: 6%;
 }
-
 
 .attributes .hierarchy {
   position: absolute;
@@ -554,9 +560,9 @@ main .gameInfo {
 }
 
 .card button {
-  background-image: linear-gradient(to right, #D74430 50%, #000 50%);
+  background-image: linear-gradient(to left, #D74430 50%, #000 50%);
   background-size: 200% 100%;
-  background-position: right;
+  background-position: left;
   border: none;
 	width: 14.1vw;
   padding: 0.9vw 0;
@@ -570,7 +576,7 @@ main .gameInfo {
 }
 
 .card button:hover {
-	background-position: left;
+	background-position: right;
 }
 
 .card h4 {
