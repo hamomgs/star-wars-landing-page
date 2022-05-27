@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
 @font-face {
+  font-family: 'Sovereign';
+  src: url('../fonts/Sovereign.otf');
+}
+
+@font-face {
   font-family: 'Trueno';
   src: url('../fonts/TruenoExBd.otf');
 }
@@ -16,7 +21,10 @@
 html {
   scroll-behavior: smooth;
 }
-
+::selection {
+  color: #fff;
+  background-color: #d74430;
+}
 ::-webkit-scrollbar-track {
 	background-color: #2D2D2D;
 }
@@ -258,7 +266,8 @@ main .gameInfo {
 }
 
 .structureList span {
-  font-family: 'Trueno';
+  font-family: 'Sovereign', 'Trueno', sans-serif, 'Trueno', sans-serif;
+  font-weight: 400;
 }
 
 .structureList ul {
@@ -298,9 +307,11 @@ main .gameInfo {
 
 .gameAttributes h3 {
   color: #fff;
-  font-family: 'Trueno';
+  font-family: 'Sovereign', 'Trueno', sans-serif;
   font-size: 2.6vw;
+  font-weight: 400;
   margin: 10% 0 5% 13.5%;
+  letter-spacing: 2px;
 }
 
 .gameAttributes .attributes {
@@ -314,35 +325,36 @@ main .gameInfo {
   position: relative;
 }
 
-.attributeImg .hoverContainer {
-  display: none;
+.attributes .hoverContainer {
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
 }
 
-.attributeImg:nth-child(1) .hoverContainer::before,
-.attributeImg:nth-child(1) .hoverContainer::after {
+.attributes .hoverContainer::before,
+.attributes .hoverContainer::after {
 	content: "";
 	position: absolute;
-	width: 2.6vw;
-	height: 2.6vw;
-	border: solid 0.2vw;
+	width: 5.4vw;
+	height: 5.4vw;
+	border: solid;
 }
 
-.attributeImg:nth-child(1) .hoverContainer::before {
-	border-width: 0.3vw 0 0 0.3vw;
-  top: 4%;
-  left: 2%;
+.attributes .hoverContainer::before {
+	border-width: 0.4vw 0 0 0.4vw;
+  top: 6%;
+  left: 3.4%;
 }
 
-.attributeImg:nth-child(1) .hoverContainer::after {
-	border-width: 0 0.3vw 0.3vw 0;
-  right: 2.9%;
-  bottom: 3.5%;
+.attributes .hoverContainer::after {
+	border-width: 0 0.4vw 0.4vw 0;
+  right: 4%;
+  bottom: 5.3%;
 }
 
-.attributeImg:nth-child(1) .hoverContainer {
-  background-color: #D74430B3;
-  width: 22.4vw;
-  height: 14.06vw;
+.attributes .hoverContainer {
+  background-color: #009e05b3;
+  width: 45vw;
+  height: 28vw;
   color: #fff;
   position: absolute;
   top: -4%;
@@ -350,49 +362,53 @@ main .gameInfo {
   padding: 6%;
 }
 
-.attributeImg:nth-child(1) .hoverContainer h4 {
-  font-size: 1.30vw;
-  font-family: 'Trueno';
+.attributes .hoverContainer h4 {
+  font-size: 2.6vw;
+  font-family: 'Sovereign', 'Trueno', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.07vw;
   width: 32%;
   position: absolute;
-  top: 12%;
+  top: 15%;
   left: 10%;
 }
 
-.attributeImg:nth-child(1) .hoverContainer p {
-  font-size: 0.8vw;
+.attributes .hoverContainer p {
+  font-size: 1.6vw;
   font-weight: 300;
   width: 85%;
   position: absolute;
-  top: 38%;
+  top: 40%;
   left: 10%;
 }
 
-.attributeImg:nth-child(1) .hoverContainer a {
+.attributes .hoverContainer a {
   text-decoration: none;
-  font-size: 1.04vw;
-  padding: 0.31vw 1.04vw;
-  border: solid 0.2vw;
+  font-size: 1.5vw;
+  padding: 1vw 3vw;
+  border: solid 0.3vw #fff;
   color: #fff;
   position: absolute;
   top: 70%;
   left: 6%;
+  transition: 0.3s ease-in-out;
 }
 
-.attributeImg:nth-child(1):hover .hoverContainer {
-  display: initial;
+.attributes .hoverContainer a:hover {
+  background-color: #fff;
+  color: #000;
 }
 
-.attributes .attributePrincipalImg {
+.attributeImg:hover .hoverContainer {
+  transform: scale(1);
+}
+
+.attributes .attributeImg {
   background-image: url('../image/game-preview.png');
   background-size: 100%;
   background-repeat: no-repeat;
   width: 55vw;
   height: 26.14vw;
-}
-
-.attributePrincipalImg .hoverContainer {
-  display: none;
 }
 
 .attributes .containerImgAttributes {
@@ -408,21 +424,71 @@ main .gameInfo {
   background-repeat: no-repeat;
 }
 
-.attributeImg:nth-child(1) {
+.containerImgAttributes .attributeImg:nth-child(1) {
   background-image: url('../image/security-storm-troper.png');
 }
 
-.attributeImg:nth-child(2) {
+.containerImgAttributes .attributeImg:nth-child(2) {
   background-image: url('../image/robots-war.png');
 }
 
-.attributeImg:nth-child(3) {
+.containerImgAttributes .attributeImg:nth-child(3) {
   background-image: url('../image/space-ships.png');
 }
 
-.attributeImg:nth-child(4) {
+.containerImgAttributes .attributeImg:nth-child(4) {
   background-image: url('../image/storm-trup-elevator.png');
 }
+
+.containerImgAttributes .hoverContainer::before,
+.containerImgAttributes .hoverContainer::after {
+	width: 2.6vw;
+	height: 2.6vw;
+}
+
+.containerImgAttributes .hoverContainer::before {
+	border-width: 0.3vw 0 0 0.3vw;
+}
+
+.containerImgAttributes .hoverContainer::after {
+	border-width: 0 0.3vw 0.3vw 0;
+}
+
+.containerImgAttributes .hoverContainer {
+  background-color: #d74430b3;
+  width: 22.4vw;
+  height: 14.06vw;
+}
+
+.attributeImg:nth-child(2) .hoverContainer {
+  background-color: #d98a02b3;
+}
+
+.attributeImg:nth-child(3) .hoverContainer {
+  background-color: #93009eb3;
+}
+
+.attributeImg:nth-child(4) .hoverContainer {
+  background-color: #25009eb3;
+}
+
+.containerImgAttributes .hoverContainer h4 {
+  font-size: 1.4vw;
+}
+
+.containerImgAttributes .hoverContainer p {
+  font-size: 0.8vw;
+  font-weight: 400;
+}
+
+.containerImgAttributes .hoverContainer a {
+  font-size: 1.04vw;
+  padding: 0.31vw 1.04vw;
+  border: solid 0.2vw #fff;
+  top: 70%;
+  left: 6%;
+}
+
 
 .attributes .hierarchy {
   position: absolute;
@@ -461,8 +527,9 @@ main .gameInfo {
 
 .howPlay h3 {
   color: #fff;
-  font-family: 'Trueno';
+  font-family: 'Sovereign', 'Trueno', sans-serif;
   font-size: 2.6vw;
+  font-weight: 400;
   position: absolute;
   top: 14.5%;
   left: 50.3%;
@@ -562,8 +629,10 @@ footer .downloadGame {
 
 .downloadGame h3 {
   color: #fff;
-  font-family: 'Trueno';
+  font-family: 'Sovereign', 'Trueno', sans-serif;
+  font-weight: 400;
   font-size: 2.6vw;
+  letter-spacing: 1px;
   padding: 6.8vw 0 2vw 0;
 }
 
