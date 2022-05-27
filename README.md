@@ -16,7 +16,7 @@ Vai na Web module one final challenge, Star Wars Landing Page.
 ## 📍 Checkpoints
 
 - ✅ Header
-- 🟩 Main
+- ✅ Main
 - ✅ Footer
 - 🟩 Responsive layout
 <br>
