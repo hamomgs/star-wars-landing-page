@@ -35,6 +35,8 @@ html {
   background: #d74430;
 }
 
+/* Cabeçalho */
+
 header {
   background-image: url('../image/star-wars-bg.png');
   background-size: 100%;
@@ -117,7 +119,14 @@ header .slideControl button {
   margin: 8% 0 0 5%;
   font-size: 0.9vw;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
 }
+
+header .slideControl button:hover {
+  background-color: #868f91;
+}
+
+/* Informações do jogo */
 
 main .gameInfo {
   background-image: url('../image/robot-bg.png');
@@ -182,13 +191,15 @@ main .gameInfo {
   text-decoration: none;
   font-size: 1.04vw;
   cursor: pointer;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .gameInfo .startToPlay a:hover {
   color: #d74430;
   background-color: #fff;
   font-weight: 600;
+  transform: scale(1.1);
+  box-shadow: 0 0 8px 2px #000;
 }
 
 .gameInfo .aboutTheGame {
@@ -657,6 +668,11 @@ footer .downloadGame {
 .downloadGame .storeBtn img {
   width: 14.4vw;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.storeBtn a:hover img {
+  transform: translateY(-10px);
 }
 
 .downloadGame .divider {
