@@ -676,6 +676,10 @@ footer .downloadGame {
   padding-bottom: 1.2vw;
 }
 
+.downloadGame p:nth-child(2) {
+  padding: 0;
+}
+
 .downloadGame .storeBtn a {
   text-decoration: none;
 }
