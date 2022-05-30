@@ -18,7 +18,7 @@
 - ✅ Header
 - ✅ Main
 - ✅ Footer
-- 🟩 Responsive layout
+- ✅ Responsive layout
 <br>
 
 <!-- |  Project | Developed |

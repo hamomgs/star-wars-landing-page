@@ -26,7 +26,7 @@ html {
   background-color: #d74430;
 }
 ::-webkit-scrollbar-track {
-	background-color: #2D2D2D;
+  background-color: #2d2d2d;
 }
 ::-webkit-scrollbar {
   width: 5px;
@@ -35,7 +35,7 @@ html {
   background: #d74430;
 }
 
-/* Cabeçalho */
+/* Header */
 
 header {
   background-image: url('../image/star-wars-bg.png');
@@ -126,18 +126,26 @@ header .slideControl button:hover {
   background-color: #868f91;
 }
 
-/* Informações do jogo */
+/* Game information section */
 
 main .gameInfo {
-  background-image: url('../image/robot-bg.png');
-  background-size: 42.4vw 100%;
-  background-position: left;
-  background-repeat: no-repeat;
   position: relative;
+  top: -0.8vw;
   width: 100%;
   height: 77vw;
-  margin-top: -1vw;
   display: flex;
+}
+
+.gameInfo .robotBg {
+  width: 42.4vw;
+  position: absolute;
+  z-index: -2;
+  height: 75.9vw;
+}
+
+.gameInfo .robotBg img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .gameInfo .startToPlay {
@@ -202,6 +210,8 @@ main .gameInfo {
   box-shadow: 0 0 8px 2px #000;
 }
 
+/* About the game section */
+
 .gameInfo .aboutTheGame {
   position: absolute;
   top: 21%;
@@ -248,6 +258,8 @@ main .gameInfo {
   z-index: 2;
 }
 
+/* Game structure section */
+
 .gameInfo .gameStructure {
   width: 100%;
   position: absolute;
@@ -289,7 +301,7 @@ main .gameInfo {
 }
 
 .structureList ul li {
-  background-image: linear-gradient(to left, #D74430 50%, transparent 50%);
+  background-image: linear-gradient(to left, #d74430 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: left;
   font-size: 1.56vw;
@@ -312,8 +324,10 @@ main .gameInfo {
   bottom: -3.9vw;
 }
 
+/* Game attributes section */
+
 .gameInfo .gameAttributes {
-  background-color: #2D2D2D;
+  background-color: #2d2d2d;
   width: 100%;
   height: 125vw;
   position: absolute;
@@ -336,10 +350,6 @@ main .gameInfo {
   position: relative;
 }
 
-.attributes .attributeImg {
-  position: relative;
-}
-
 .attributes .hoverContainer {
   transform: scale(0);
   transition: 0.5s ease-in-out;
@@ -347,21 +357,21 @@ main .gameInfo {
 
 .attributes .hoverContainer::before,
 .attributes .hoverContainer::after {
-	content: "";
-	position: absolute;
-	width: 5.4vw;
-	height: 5.4vw;
-	border: solid;
+  content: '';
+  position: absolute;
+  width: 5.4vw;
+  height: 5.4vw;
+  border: solid;
 }
 
 .attributes .hoverContainer::before {
-	border-width: 0.4vw 0 0 0.4vw;
+  border-width: 0.4vw 0 0 0.4vw;
   top: 6%;
   left: 3.4%;
 }
 
 .attributes .hoverContainer::after {
-	border-width: 0 0.4vw 0.4vw 0;
+  border-width: 0 0.4vw 0.4vw 0;
   right: 4%;
   bottom: 5.3%;
 }
@@ -427,6 +437,7 @@ main .gameInfo {
   background-repeat: no-repeat;
   width: 55vw;
   height: 26.14vw;
+  position: relative;
 }
 
 .attributes .containerImgAttributes {
@@ -460,16 +471,16 @@ main .gameInfo {
 
 .containerImgAttributes .hoverContainer::before,
 .containerImgAttributes .hoverContainer::after {
-	width: 2.6vw;
-	height: 2.6vw;
+  width: 2.6vw;
+  height: 2.6vw;
 }
 
 .containerImgAttributes .hoverContainer::before {
-	border-width: 0.3vw 0 0 0.3vw;
+  border-width: 0.3vw 0 0 0.3vw;
 }
 
 .containerImgAttributes .hoverContainer::after {
-	border-width: 0 0.3vw 0.3vw 0;
+  border-width: 0 0.3vw 0.3vw 0;
 }
 
 .containerImgAttributes .hoverContainer {
@@ -528,6 +539,8 @@ main .gameInfo {
   right: 0;
 }
 
+/* How to play section */
+
 .gameInfo .howPlay {
   position: relative;
   top: 231.5%;
@@ -571,13 +584,13 @@ main .gameInfo {
 }
 
 .card button {
-  background-image: linear-gradient(to left, #D74430 50%, #000 50%);
+  background-image: linear-gradient(to left, #d74430 50%, #000 50%);
   background-size: 200% 100%;
   background-position: left;
   border: none;
-	width: 14.1vw;
+  width: 14.1vw;
   padding: 0.9vw 0;
-	color: #FFF;
+  color: #fff;
   font-weight: 300;
   font-size: 1.57vw;
   position: absolute;
@@ -587,7 +600,7 @@ main .gameInfo {
 }
 
 .card button:hover {
-	background-position: right;
+  background-position: right;
 }
 
 .card h4 {
@@ -599,12 +612,12 @@ main .gameInfo {
 }
 
 .card button:hover ~ h4 {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .card p {
   width: 9vw;
-	text-align: center;
+  text-align: center;
   font-weight: 300;
   font-size: 1.04vw;
   position: absolute;
@@ -629,8 +642,10 @@ main .gameInfo {
 }
 
 .card button:hover ~ .line {
-	background-color: #D74430;
+  background-color: #d74430;
 }
+
+/* Footer */
 
 footer {
   position: relative;
@@ -676,7 +691,7 @@ footer .downloadGame {
 }
 
 .downloadGame .divider {
-  background-color: #D74430;
+  background-color: #d74430;
   width: 29vw;
   height: 0.4vw;
   margin: 3.38vw 0;
@@ -692,4 +707,395 @@ footer .downloadGame {
   position: absolute;
   top: -14.2%;
   left: 53.5%;
+}
+
+/* Media queries */
+
+@media (max-width: 600px) {
+  /* Header */
+
+  header .slideControlContainer {
+    width: 14.07vw;
+    right: 9.5%;
+    bottom: -6vw;
+    font-size: 2.4vw;
+  }
+
+  header .slideControlContainer .divider {
+    width: 100%;
+    height: 3px;
+    margin: 10% 0;
+  }
+
+  header .slideControlContainer .slideControl {
+    font-size: 1.6vw;
+  }
+
+  header .slideControl .slideNumb01 {
+    font-size: 2.2vw;
+  }
+
+  header .slideControl button {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin: 0 0 0 5%;
+    font-size: 1.8vw;
+  }
+
+  header .slideControl button:nth-child(2) {
+    margin-left: 30%;
+  }
+
+  /* Game information section */
+
+  main .gameInfo {
+    height: 120vw;
+  }
+
+  .gameInfo .robotBg {
+    width: 73.5vw;
+    height: 135vw;
+    position: absolute;
+    z-index: -2;
+  }
+
+  .gameInfo .startToPlay {
+    width: 59.2vw;
+    height: 87.46vw;
+    top: 10.5%;
+    left: 31.5%;
+    position: absolute;
+  }
+
+  .gameInfo .startToPlay h3 {
+    font-size: 7.46vw;
+    width: 53.5%;
+    margin-bottom: 10vw;
+    padding-top: 4.16vw;
+  }
+
+  .gameInfo .startToPlay p:nth-child(2) {
+    font-size: 3.5vw;
+    width: 75%;
+    height: 25%;
+  }
+
+  .gameInfo .startToPlay p:nth-child(4) {
+    font-size: 2.1vw;
+    position: absolute;
+    top: 57%;
+    margin: 30.4vw auto 0 auto;
+  }
+
+  .gameInfo .startToPlay a {
+    width: 32.13vw;
+    height: 8vw;
+    border: solid 0.5vw #fff;
+    border-radius: 1vw;
+    font-size: 4.1vw;
+  }
+
+  /* About the game section */
+
+  .gameInfo .aboutTheGame {
+    position: absolute;
+    top: 87%;
+    left: 31.5%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 0;
+  }
+
+  .gameInfo .aboutTheGame .textContainer {
+    font-size: 3.73vw;
+    width: 80.53vw;
+    position: absolute;
+    top: 40vw;
+    left: -35%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.2vw;
+  }
+
+  .aboutTheGame .textContainer h5 {
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  .textContainer .textDivider {
+    background-color: #000;
+    width: 38.6vw;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    top: 10.5%;
+  }
+
+  .gameInfo .aboutTheGame img {
+    width: 59.2vw;
+  }
+
+  .gameInfo .divider {
+    width: 80.53vw;
+    height: 6px;
+    top: 158%;
+    left: 10.7vw;
+  }
+
+  /* Game structure section */
+
+  .gameInfo .gameStructure {
+    position: absolute;
+    top: 198%;
+    z-index: 2;
+  }
+
+  .gameStructure .lordSifh img {
+    width: 46.13vw;
+    left: 2.8%;
+  }
+
+  .gameStructure .structureList {
+    width: 38.93vw;
+    position: absolute;
+    right: 29.8%;
+    top: -40.5vw;
+  }
+
+  .structureList h2 {
+    font-size: 4vw;
+  }
+
+  .structureList ul {
+    gap: 0.5vw;
+  }
+
+  .structureList ul li {
+    font-size: 2.13vw;
+    background-size: 201% 100%;
+  }
+
+  .gameStructure .rey img {
+    width: 24.26vw;
+    right: 6.2%;
+  }
+
+  /* Game attributes section */
+
+  .gameInfo .gameAttributes {
+    height: 367.3vw;
+    top: 193%;
+  }
+
+  .gameAttributes h3 {
+    font-size: 4vw;
+    margin: 10% 0 5% 38.2%;
+  }
+
+  .gameAttributes .attributes {
+    display: block;
+    width: 80.53vw;
+  }
+
+  .attributes .hoverContainer::before {
+    top: 8.5%;
+    left: 4.5%;
+  }
+
+  .attributes .hoverContainer::after {
+    right: 4.5%;
+    bottom: 8.5%;
+  }
+
+  .attributes .hoverContainer {
+    top: 21%;
+    left: 22%;
+  }
+
+  .attributeImg:hover .hoverContainer {
+    transform: scale(1.9);
+  }
+
+  .attributes .attributeImg {
+    width: 80.53vw;
+    height: 49.06vw;
+  }
+
+  .attributes .attributeImg p {
+    font-size: 1.9vw;
+  }
+
+  .attributes .attributeImg a {
+    font-size: 2vw;
+    border: solid 0.5vw #fff;
+  }
+
+  .attributes .containerImgAttributes {
+    width: 80.53vw;
+  }
+
+  .containerImgAttributes .hoverContainer::before,
+  .containerImgAttributes .hoverContainer::after {
+    width: 5.4vw;
+    height: 5.4vw;
+  }
+
+  .containerImgAttributes .hoverContainer::before {
+    border-width: 0.4vw 0 0 0.4vw;
+  }
+
+  .containerImgAttributes .hoverContainer::after {
+    border-width: 0 0.4vw 0.4vw 0;
+  }
+
+  .containerImgAttributes .hoverContainer {
+    width: 45vw;
+    height: 28vw;
+    top: 21%;
+    left: 22%;
+    padding: 6%;
+  }
+
+  .containerImgAttributes .hoverContainer h4 {
+    font-size: 2.6vw;
+  }
+
+  .containerImgAttributes .hoverContainer p {
+    font-size: 1.9vw;
+    font-weight: 300;
+  }
+
+  .containerImgAttributes .hoverContainer a {
+    top: 70%;
+    left: 6%;
+    font-size: 2vw;
+    padding: 1vw 3vw;
+    border: solid 0.5vw #fff;
+  }
+
+  .attributes .hierarchy {
+    position: absolute;
+    top: 255vw;
+    left: -12%;
+    width: 100vw;
+  }
+
+  .attributes .hierarchy img {
+    width: 100%;
+  }
+
+  .attributes .hierarchy figcaption {
+    font-size: 2.1vw;
+    width: 60vw;
+    margin-top: 0;
+    right: 10%;
+  }
+
+  /* How to play section */
+
+  .gameInfo .howPlay {
+    top: 477%;
+  }
+
+  .howPlay .StormCapitain img {
+    width: 101vw;
+    height: 151.2vw;
+    left: -23%;
+  }
+
+  .howPlay h3 {
+    font-size: 4vw;
+    top: 8.8%;
+    left: 74.3%;
+    width: 30%;
+  }
+
+  .howPlay .cardsContainer {
+    top: 27%;
+    left: 61%;
+    flex-direction: column;
+    height: 85vw;
+  }
+
+  .card button {
+    width: 38.5vw;
+    padding: 3vw 0;
+    font-size: 4vw;
+    top: 10vw;
+  }
+
+  .card h4 {
+    font-size: 6.66vw;
+    top: 0;
+  }
+
+  .card p {
+    width: 32.8vw;
+    font-size: 3.73vw;
+    top: 22vw;
+  }
+
+  .card:nth-child(2) p {
+    width: 20vw;
+  }
+
+  .card:nth-child(3) p {
+    width: 19vw;
+  }
+
+  .card .line {
+    width: 16vw;
+    height: 5px;
+    top: 34vw;
+  }
+
+  /* Footer */
+
+  footer {
+    top: 610vw;
+  }
+
+  footer .downloadGame {
+    width: 100vw;
+    height: 180.8vw;
+    padding-left: 12%;
+  }
+
+  .downloadGame h3 {
+    font-size: 13.33vw;
+    padding: 15% 0 8% 0;
+  }
+
+  .downloadGame p {
+    font-size: 3.73vw;
+    width: 80vw;
+    padding-bottom: 8%;
+  }
+
+  .downloadGame p:nth-child(2) {
+    padding-bottom: 1%;
+  }
+
+  .downloadGame .storeBtn img {
+    width: 38.93vw;
+  }
+
+  .downloadGame .divider {
+    width: 78.5vw;
+    height: 5px;
+    margin: 2% 0 8% 0;
+  }
+
+  .downloadGame .starWarsTitle img {
+    width: 44.4vw;
+    padding-bottom: 5%;
+    margin-left: 18vw;
+  }
+
+  .darthVader img {
+    width: 80.53vw;
+    top: 135vw;
+    left: 14%;
+  }
 }
