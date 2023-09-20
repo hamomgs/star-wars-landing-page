@@ -1,5 +1,5 @@
 <div>
-  **Language:** 
+  <b>Language:</b>
   <kbd title="Switch language">
     <a href="https://github.com/hamomgs/star-wars-landing-page" title="Switch language" target="_blank">
       <img width="25em" alt="bandeira do reino unido" src="https://i.postimg.cc/wxCLhRYN/download-39.png" />
