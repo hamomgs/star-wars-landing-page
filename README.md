@@ -1,6 +1,6 @@
 **Idioma:** 
 <kbd title="Switch language">
-  <a href="https://github.com/hamomgs/star-wars-landing-page/blob/main/README-ptBR.md" title="Switch language" target="_blank">
+  <a href="https://github.com/hamomgs/star-wars-landing-page/blob/main/README-ptBR.md" title="Trocar idioma" target="_blank">
     <img width="25em" alt="bandeira do brasil" src="https://i.postimg.cc/kXW8wM7p/download-38.png" />
   </a>
 </kbd>
