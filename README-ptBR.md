@@ -1,4 +1,11 @@
-# Página de Destino de Star Wars
+**Language:** 
+<kbd title="Switch language">
+  <a href="https://github.com/hamomgs/star-wars-landing-page" title="Switch language" target="_blank">
+    <img width="25em" alt="bandeira do reino unido" src="https://i.postimg.cc/wxCLhRYN/download-39.png" />
+  </a>
+</kbd>
+
+# Star Wars Landing Page
 
 Uma landing page para o jogo Star Wars Battlefront Companion, um projeto proposto pela Escola [Vai na Web](https://www.vainaweb.com.br), para o desafio de final de modulo. Essa landing page elegante e informativa é cuidadosamente elaborada para oferecer aos jogadores acesso sem esforço ao jogo Star Wars Battlefront Companion. Oferecendo detalhes essenciais do jogo e links de download, simplificando a experiência de jogo para os fãs.
 
@@ -6,9 +13,9 @@ Uma landing page para o jogo Star Wars Battlefront Companion, um projeto propost
 
 ## 📍 Pontos de Verificação
 
-- ✅ Cabeçalho
-- ✅ Principal
-- ✅ Rodapé
+- ✅ Header
+- ✅ Main
+- ✅ Footer
 - ✅ Layout responsivo
 
 ---
