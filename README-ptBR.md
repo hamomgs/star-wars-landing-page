@@ -1,11 +1,24 @@
-**Language:** 
-<kbd title="Switch language">
-  <a href="https://github.com/hamomgs/star-wars-landing-page" title="Switch language" target="_blank">
-    <img width="25em" alt="bandeira do reino unido" src="https://i.postimg.cc/wxCLhRYN/download-39.png" />
-  </a>
-</kbd>
+<div>
+  **Language:** 
+  <kbd title="Switch language">
+    <a href="https://github.com/hamomgs/star-wars-landing-page" title="Switch language" target="_blank">
+      <img width="25em" alt="bandeira do reino unido" src="https://i.postimg.cc/wxCLhRYN/download-39.png" />
+    </a>
+  </kbd>
+</div>
 
 # Star Wars Landing Page
+<p>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hamomgs/star-wars-landing-page?color=%2304D361" />
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/hamomgs/star-wars-landing-page" />
+  
+  <a href="https://github.com/tgmarinho/README-ecoleta/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hamomgs/star-wars-landing-page" />
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen" />
+</p>
 
 Uma landing page para o jogo Star Wars Battlefront Companion, um projeto proposto pela Escola [Vai na Web](https://www.vainaweb.com.br), para o desafio de final de modulo. Essa landing page elegante e informativa é cuidadosamente elaborada para oferecer aos jogadores acesso sem esforço ao jogo Star Wars Battlefront Companion. Oferecendo detalhes essenciais do jogo e links de download, simplificando a experiência de jogo para os fãs.
 
