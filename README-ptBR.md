@@ -11,7 +11,7 @@ Uma landing page para o jogo Star Wars Battlefront Companion, um projeto propost
 
 ---
 
-## 📍 Pontos de Verificação
+## 📍 Checkpoints
 
 - ✅ Header
 - ✅ Main
