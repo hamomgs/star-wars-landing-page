@@ -1,11 +1,24 @@
-**Idioma:** 
-<kbd title="Switch language">
-  <a href="https://github.com/hamomgs/star-wars-landing-page/blob/main/README-ptBR.md" title="Trocar idioma" target="_blank">
-    <img width="25em" alt="bandeira do brasil" src="https://i.postimg.cc/kXW8wM7p/download-38.png" />
-  </a>
-</kbd>
+<div>
+  <b>Idioma:</b>
+  <kbd title="Switch language">
+    <a href="https://github.com/hamomgs/star-wars-landing-page/blob/main/README-ptBR.md" title="Trocar idioma" target="_blank">
+      <img width="25em" alt="bandeira do brasil" src="https://i.postimg.cc/kXW8wM7p/download-38.png" />
+    </a>
+  </kbd>
+</div>
 
 # Star Wars Landing Page
+<p>
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/hamomgs/star-wars-landing-page?color=%2304D361" />
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/hamomgs/star-wars-landing-page" />
+  
+  <a href="https://github.com/tgmarinho/README-ecoleta/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hamomgs/star-wars-landing-page" />
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen" />
+</p>
 
 A landing page for the Star Wars Battlefront Companion game, a project proposed by [Vai na Web](https://www.vainaweb.com.br) School for the end-of-module challenge. This elegant and informative landing page is carefully crafted to provide gamers with effortless access to the Star Wars Battlefront Companion game. Offering essential game details and download links, it simplifies the gaming experience for fans.
 
